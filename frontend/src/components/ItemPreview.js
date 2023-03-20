@@ -17,7 +17,7 @@ const mapDispatchToProps = (dispatch) => ({
     }),
 });
 
-const placeHolderImage = "../../placeholder.png";
+const placeHolderImage = '/placeholder.png';
 
 const ItemPreview = (props) => {
   const item = props.item;
