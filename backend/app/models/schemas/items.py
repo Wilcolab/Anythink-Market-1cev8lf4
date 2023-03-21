@@ -29,6 +29,7 @@ class ItemInUpdate(RWSchema):
     title: Optional[str] = None
     description: Optional[str] = None
     body: Optional[str] = None
+    image: Optional[str] = None
 
 
 class ListOfItemsInResponse(RWSchema):
