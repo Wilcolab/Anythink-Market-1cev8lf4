@@ -77,6 +77,7 @@ class ItemsRepository(BaseRepository):  # noqa: WPS214
         updated_item.slug = slug or updated_item.slug
         updated_item.title = title or item.title
         updated_item.body = body or item.body
+        updated_item.image = image or item.image
         updated_item.description = description or item.description
 
         async with self.connection.transaction():
@@ -87,6 +88,7 @@ class ItemsRepository(BaseRepository):  # noqa: WPS214
                 new_slug=updated_item.slug,
                 new_title=updated_item.title,
                 new_body=updated_item.body,
+                new_image=updated_item.image,
                 new_description=updated_item.description,
             )
 
